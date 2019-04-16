@@ -82,6 +82,7 @@ public class GuitarTunerActivity extends AppCompatActivity implements TunerPitch
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
         getMenuInflater().inflate(R.menu.guitar_tuner_activity_menu, menu);
 
         ActionBar actionBar = getSupportActionBar();

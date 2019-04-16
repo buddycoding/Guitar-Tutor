@@ -23,7 +23,7 @@ import butterknife.BindView;
 
 public class CircleGuitarTunerFragment extends BaseFragment implements TunerView, CircleTunerView.OnNotePressedListener {
 
-    public static final String TITLE = "Guitar Tuner";
+    public static final String TITLE = "buddycoding";
 
     @BindView(R.id.circleTunerView)
     CircleTunerView circleTunerView;

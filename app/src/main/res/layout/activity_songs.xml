@@ -18,13 +18,13 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="110dp"
+            android:layout_height="130dp"
             android:background="#0072bb">
 
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="20dp"
@@ -39,11 +39,11 @@
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_width="match_parent"
-                android:layout_height="21dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="53dp"
+                android:layout_marginTop="65dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:gravity="center"
@@ -60,7 +60,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="80dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:text="SONGS"
@@ -69,7 +68,8 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText"
-                tools:layout_editor_absoluteY="74dp" />
+                tools:layout_editor_absoluteY="74dp"
+                android:layout_below="@id/textView6"/>
 
         </RelativeLayout>
 

@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.guitar_tutor.R;
+import com.example.guitar_tutor.ui.activity.Migrate.MainActivity;
 import com.example.guitar_tutor.ui.dialog.PermissionRationalDialogFragment;
 
 import butterknife.BindView;
@@ -141,7 +142,10 @@ public class PermissionActivity extends AppCompatActivity implements PermissionR
 
     private void onPermissionGranted() {
         // Go to the Guitar Tuner Activity
-        startActivity(GuitarTunerActivity.newIntent(PermissionActivity.this));
+        //startActivity(GuitarTunerActivity.newIntent(PermissionActivity.this));
+
+        Intent intent = new Intent (this, MainActivity.class);
+        startActivity(intent);
         finish();
     }
 
