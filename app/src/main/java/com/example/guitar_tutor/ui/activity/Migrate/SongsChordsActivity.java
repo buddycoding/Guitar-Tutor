@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.guitar_tutor.R;
+import com.github.chrisbanes.photoview.PhotoView;
 //import com.github.chrisbanes.photoview.PhotoView;
 
 
@@ -28,10 +29,10 @@ public class SongsChordsActivity extends AppCompatActivity {
         songName.setText(myIntent.getStringExtra("SongName"));
         artistName.setText(myIntent.getStringExtra("ArtistName"));
 
-        /*
+
         PhotoView photoView = findViewById(R.id.pv_songimage);
-        photoView.setImageResource(R.drawable.canthelpfallinginlove);
-        */
+        //photoView.setImageResource(R.drawable.song01);
+        photoView.setImageResource(this.getResources().getIdentifier("song" + myIntent.getStringExtra("SongNumber"), "drawable", this.getPackageName()));
 
         button1 = findViewById(R.id.buttonhome);
         button1.setOnClickListener(new View.OnClickListener() {

@@ -47,6 +47,7 @@ public class SongsActivity extends AppCompatActivity {
         Intent intent = new Intent (this, SongsChordsActivity.class);
         intent.putExtra("SongName", songs.get(pos).getName());
         intent.putExtra("ArtistName", songs.get(pos).getArtist());
+        intent.putExtra("SongNumber", songs.get(pos).getNumber());
         startActivity(intent);
     }
 }

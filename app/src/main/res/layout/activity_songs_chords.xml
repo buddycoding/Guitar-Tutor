@@ -40,6 +40,14 @@
         app:layout_constraintTop_toBottomOf="@+id/songName"
         tools:ignore="HardcodedText" />
 
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/pv_songimage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/artistName"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
     <Button
 
         android:id="@+id/buttonhome"

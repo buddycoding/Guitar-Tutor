@@ -15,6 +15,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.guitar_tutor.R;
+import com.github.airsaid.library.widget.Chord;
+import com.github.airsaid.library.widget.ChordView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -125,6 +127,12 @@ public class ChordsSoundsActivity extends AppCompatActivity {
 
         lLayout.addView(newLL);
 
+        //
+        ChordView mChordView = findViewById(R.id.chordView1);
+        //Chord chord = new Chord(new int[]{-1, 3, 2, 0, 1, 4}, new int[]{0, 3, 2, 0, 1, 4});
+        //fret number & (string position and label)
+        Chord chord = new Chord(new int[]{-1, -1, 0, 2, 3, 2}, new int[]{0, 0, 0, 1, 3, 2});
+        mChordView.setChord(chord);
     }
 
     private void setFileName(int index, final String filename){
