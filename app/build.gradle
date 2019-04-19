@@ -3,7 +3,8 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.chrynan.android_guitar_tuner"
+        //applicationId "com.chrynan.android_guitar_tuner"
+        applicationId "com.example.guitar_tutor.GuitarTunerApplication"
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 2

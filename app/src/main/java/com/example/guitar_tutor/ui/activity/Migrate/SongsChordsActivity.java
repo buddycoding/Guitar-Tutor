@@ -34,6 +34,8 @@ public class SongsChordsActivity extends AppCompatActivity {
         //photoView.setImageResource(R.drawable.song01);
         photoView.setImageResource(this.getResources().getIdentifier("song" + myIntent.getStringExtra("SongNumber"), "drawable", this.getPackageName()));
 
+
+
         button1 = findViewById(R.id.buttonhome);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override

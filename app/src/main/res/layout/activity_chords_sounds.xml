@@ -57,6 +57,7 @@
                 android:scaleType="fitXY"
                 />
 
+            <!--
             <com.github.airsaid.library.widget.ChordView
                 android:id="@+id/chordView1"
                 android:layout_width="240dp"
@@ -82,6 +83,7 @@
                 app:cv_noteTextColor="@android:color/white"
                 app:cv_noteTextSize="16sp"
                 app:cv_stringOffsetY="10dp" />
+            -->
         </LinearLayout>
 
 

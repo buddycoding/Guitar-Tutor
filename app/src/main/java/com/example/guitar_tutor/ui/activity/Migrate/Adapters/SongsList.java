@@ -29,7 +29,7 @@ public class SongsList {
         songs.add(new SongsList("Malibu Nights", "LANY", "02"));
         songs.add(new SongsList("Let It Be", "The Beatles", "03"));
         songs.add(new SongsList("You're Beautiful", "James Blunt", "04"));
-        songs.add(new SongsList("Malibu Nights", "LANY", "05"));
+        songs.add(new SongsList("How Deep Is Your Love", "Bee Gees", "05"));
         songs.add(new SongsList("Just The Way You Are", "Bruno Mars", "06"));
         songs.add(new SongsList("Fix You", "Coldplay", "07"));
         songs.add(new SongsList("Thinking Out Loud", "Ed Sheeran", "08"));
