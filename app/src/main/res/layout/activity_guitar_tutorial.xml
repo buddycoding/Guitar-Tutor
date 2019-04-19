@@ -24,7 +24,7 @@
         android:layout_marginTop="37dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="GUITAR TUTORIAL APP"
+        android:text="BASIC GUITAR TUTORIAL"
         android:textAlignment="center"
         android:textColor="#ffff"
         android:textSize="34sp"
@@ -73,9 +73,58 @@
             app:layout_constraintTop_toBottomOf="@+id/textView5"
             tools:ignore="HardcodedText" />
 
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="510dp" />
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="312dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button"
+            android:text="Parts of Guitar"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            tools:ignore="HardcodedText"
+            />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="311dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button"
+            android:text="Strings and Numbers"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button8"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="311dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button"
+            android:text="Holding a Guitar"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button10"
+            tools:ignore="HardcodedText" />
 
         <Button
             android:id="@+id/buttonhome"
