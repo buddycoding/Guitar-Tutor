@@ -1,2 +1,2 @@
 # Guitar-Tutor
-A simple Guitar Tuner Application for Android.
+A simple Guitar Tutor Application for Android.
