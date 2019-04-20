@@ -18,23 +18,6 @@ public class ChordsList {
 
     public static ArrayList<ChordsList> createChordList(){
         ArrayList<ChordsList> chords = new ArrayList<>();
-        /*
-        chords.add(new ChordsList("G"));
-        chords.add(new ChordsList("D"));
-        chords.add(new ChordsList("C"));
-        chords.add(new ChordsList("Em"));
-        chords.add(new ChordsList("Am"));
-        chords.add(new ChordsList("G"));
-        chords.add(new ChordsList("A"));
-        chords.add(new ChordsList("E"));
-        chords.add(new ChordsList("Dm"));
-        chords.add(new ChordsList("Bm"));
-        chords.add(new ChordsList("F"));
-        chords.add(new ChordsList("Fmaj7"));
-        chords.add(new ChordsList("Fadd9"));
-        chords.add(new ChordsList("D7"));
-        chords.add(new ChordsList("E7"));
-        chords.add(new ChordsList("A7"));*/
 
         /*
             color codes:

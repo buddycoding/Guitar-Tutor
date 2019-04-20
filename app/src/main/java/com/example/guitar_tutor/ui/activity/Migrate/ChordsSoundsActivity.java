@@ -15,8 +15,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.guitar_tutor.R;
-import com.github.airsaid.library.widget.Chord;
-import com.github.airsaid.library.widget.ChordView;
 
 import java.util.ArrayList;
 import java.util.List;
