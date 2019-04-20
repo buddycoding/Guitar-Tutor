@@ -10,7 +10,7 @@
         android:id="@+id/songName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Holding of a Guitar"
+        android:text="Holding a Guitar"
         android:textAlignment="center"
         android:textColor="#ffff"
         android:textSize="34sp"
