@@ -48,13 +48,16 @@
             android:orientation="vertical"
             android:background="@drawable/bg">
 
+            <!--
+            android:background="@drawable/bg -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="#0072bb">
 
                 <TextView
                     android:id="@+id/textView7"
@@ -63,7 +66,6 @@
                     android:layout_below="@id/textView6"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
                     android:text="GUESS THE CHORD NAME"
                     android:textAlignment="center"
@@ -71,8 +73,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     tools:ignore="HardcodedText"
-                    tools:layout_editor_absoluteY="74dp"
-                    android:layout_marginBottom="16dp"/>
+                    tools:layout_editor_absoluteY="74dp"/>
 
                 <TextView
                     android:id="@+id/textView8"
@@ -90,12 +91,19 @@
                     android:textStyle="bold"
                     tools:ignore="HardcodedText"
                     tools:layout_editor_absoluteY="74dp"
-                    android:layout_marginBottom="16dp"/>
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <com.github.airsaid.library.widget.ChordView
                     android:id="@+id/chordView1"
-                    android:layout_width="243.75dp"
-                    android:layout_height="375dp"
+                    android:layout_width="195dp"
+                    android:layout_height="300dp"
                     app:cv_barreAlpha="200"
                     app:cv_barreColor="@android:color/white"
                     app:cv_barreStrokeColor="@android:color/white"
@@ -132,21 +140,14 @@
                     android:textColor="#000000"
                     android:textSize="14sp"
                     tools:ignore="HardcodedText"
-                    tools:layout_editor_absoluteY="74dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:background="#ffffff">
+                    android:paddingTop="4dp"/>
 
                 <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center_horizontal"
-                    android:orientation="vertical"
+                    android:orientation="horizontal"
                     android:id="@+id/radio_group">
                     <RadioButton android:id="@+id/radio_a"
                         android:layout_width="match_parent"
@@ -174,7 +175,6 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="8dp"
-                android:paddingBottom="8dp"
                 android:orientation="vertical">
                 <Button
                     android:id="@+id/buttonsubmit"
@@ -182,7 +182,6 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_centerInParent="true"
-                    android:layout_marginBottom="10dp"
                     android:text="Submit Answer"
                     android:textColor="#000000"/>
 
@@ -192,7 +191,6 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_centerInParent="true"
-                    android:layout_marginBottom="10dp"
                     android:text="Next Chord"
                     android:textColor="#000000"/>
             </LinearLayout>

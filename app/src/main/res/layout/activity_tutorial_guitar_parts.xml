@@ -54,7 +54,8 @@
             android:layout_below="@+id/artistName"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
-            android:src="@drawable/tutorial_guitar_parts"/>
+            android:src="@drawable/tutorial_guitar_parts"
+            android:layout_weight="1"/>
 
         <TextView
             android:id="@+id/guitarDesc"
@@ -79,7 +80,8 @@ The middle, narrow section of the guitar is called the neck. The nut is the whit
             app:layout_constraintHorizontal_bias="0.666"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/pv_songimage"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText"
+            />
     </LinearLayout>
 
 

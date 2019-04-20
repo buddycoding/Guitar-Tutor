@@ -142,6 +142,7 @@ public class QuestionsActivity extends AppCompatActivity {
         if(selectedRadio == answer)
         {
             message = "Correct answer!";
+            randQuestion();
         }
 
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
