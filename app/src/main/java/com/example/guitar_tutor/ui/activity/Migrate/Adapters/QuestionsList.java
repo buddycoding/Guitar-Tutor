@@ -31,6 +31,18 @@ public class QuestionsList {
         chords.add(new QuestionsList("e", new int[]{ 0,2,2,1,0,0 }, new int[]{ 0,2,3,1,0,0 }));
         chords.add(new QuestionsList("dm", new int[]{ -1,-1,0,2,3,1 }, new int[]{ -1,-1,0,2,3,1 }));
 
+        chords.add(new QuestionsList("bm", new int[]{ -1,2,4,4,3,-1 }, new int[]{ -1,1,3,4,2,-1 }));
+        chords.add(new QuestionsList("f", new int[]{ -1,-1,3,2,1,0 }, new int[]{ -1,-1,3,2,1,0 }));
+        chords.add(new QuestionsList("f7", new int[]{ -1,-1,3,2,1,0 }, new int[]{ -1,-1,-3,2,1,0 }));
+        chords.add(new QuestionsList("f9", new int[]{ -1,-1,3,2,1,3 }, new int[]{ -1,-1,3,2,1,4 }));
+        chords.add(new QuestionsList("d7", new int[]{ -1,-1,0,2,1,2 }, new int[]{ -1,-1,0,2,1,3 }));
+        chords.add(new QuestionsList("e7", new int[]{ 0,2,0,1,0,0 }, new int[]{ 0,2,0,1,0,0 }));
+        chords.add(new QuestionsList("a7", new int[]{ -1,0,2,0,2,0 }, new int[]{ -1,0,1,0,2,0 }));
+        chords.add(new QuestionsList("g7", new int[]{ 3,2,0,0,0,1 }, new int[]{ 3,2,0,0,0,1 }));
+        chords.add(new QuestionsList("c7", new int[]{ -1,3,2,3,1,0 }, new int[]{ -1,3,2,4,1,0 }));
+        chords.add(new QuestionsList("b7", new int[]{ -1,2,1,2,0,2 }, new int[]{ -1,2,1,3,0,4 }));
+
+
         return chords;
     }
 }
