@@ -2,10 +2,13 @@ package com.example.guitar_tutor.ui.activity.Migrate;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.guitar_tutor.R;
@@ -24,6 +27,7 @@ public class QuestionsActivity extends AppCompatActivity {
     private RadioGroup radioGroup;
     ArrayList<QuestionsList> questions = QuestionsList.createQuestionList();
     private int answer;
+    private int score = 0, questionNumber = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +54,7 @@ public class QuestionsActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nextChord();
+                //nextChord();
             }
         });
 
@@ -142,9 +146,28 @@ public class QuestionsActivity extends AppCompatActivity {
         if(selectedRadio == answer)
         {
             message = "Correct answer!";
-            randQuestion();
+            score++;
         }
 
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        questionNumber++;
+        Log.w("Qno", questionNumber + "");
+        if(questionNumber < 10)
+        {
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+            randQuestion();
+        }
+        else
+        {
+            LinearLayout ll_root = findViewById(R.id.ll_root);
+            LinearLayout ll_root2 = findViewById(R.id.ll_root2);
+            ll_root.setVisibility(LinearLayout.GONE);
+            ll_root2.setVisibility(LinearLayout.VISIBLE);
+
+            TextView tvScore = findViewById(R.id.textView10);
+            tvScore.setText(score + "/" + questionNumber);
+
+            Toast.makeText(this, "Score is " + score + "/" + questionNumber, Toast.LENGTH_SHORT).show();
+        }
+
     }
 }

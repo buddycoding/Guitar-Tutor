@@ -7,6 +7,7 @@ public class QuestionsList {
     private int[] mChordFret;
     private int[] mChordString;
 
+
     public QuestionsList(String chordName, int[] chordFret, int[] chordString){
         mChordName = chordName;
         mChordFret = chordFret;

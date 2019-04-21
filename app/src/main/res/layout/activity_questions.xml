@@ -42,11 +42,14 @@
 
         </RelativeLayout>
 
+
         <LinearLayout
+            android:id="@+id/ll_root"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/bg"
             android:orientation="vertical"
-            android:background="@drawable/bg">
+            android:visibility="visible">
 
             <!--
             android:background="@drawable/bg -->
@@ -54,10 +57,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#0072bb"
                 android:gravity="center"
-                android:paddingTop="8dp"
                 android:orientation="vertical"
-                android:background="#0072bb">
+                android:paddingTop="8dp">
 
                 <TextView
                     android:id="@+id/textView7"
@@ -73,7 +76,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     tools:ignore="HardcodedText"
-                    tools:layout_editor_absoluteY="74dp"/>
+                    tools:layout_editor_absoluteY="74dp" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -84,14 +87,14 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
+                    android:layout_marginBottom="4dp"
                     android:text="What is the chord name of this pattern?"
                     android:textAlignment="center"
                     android:textColor="#ffff"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     tools:ignore="HardcodedText"
-                    tools:layout_editor_absoluteY="74dp"
-                    android:layout_marginBottom="4dp"/>
+                    tools:layout_editor_absoluteY="74dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -135,38 +138,44 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
+                    android:paddingTop="4dp"
                     android:text="x - Unplayed String; 0 - Open String"
                     android:textAlignment="center"
                     android:textColor="#000000"
                     android:textSize="14sp"
-                    tools:ignore="HardcodedText"
-                    android:paddingTop="4dp"/>
+                    tools:ignore="HardcodedText" />
 
                 <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/radio_group"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center_horizontal"
-                    android:orientation="horizontal"
-                    android:id="@+id/radio_group">
-                    <RadioButton android:id="@+id/radio_a"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_a"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:buttonTint="#000000"
-                        android:text="A Chord"/>
-                    <RadioButton android:id="@+id/radio_b"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:buttonTint="#000000"
-                        android:layout_weight="1"
-                        android:text="B Chord"/>
-                    <RadioButton android:id="@+id/radio_c"
+                        android:text="A Chord" />
+
+                    <RadioButton
+                        android:id="@+id/radio_b"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:buttonTint="#000000"
-                        android:text="C Chord"/>
+                        android:text="B Chord" />
+
+                    <RadioButton
+                        android:id="@+id/radio_c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+                        android:text="C Chord" />
                 </RadioGroup>
             </LinearLayout>
 
@@ -174,8 +183,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:paddingTop="8dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingTop="8dp">
+
                 <Button
                     android:id="@+id/buttonsubmit"
                     android:layout_width="wrap_content"
@@ -183,7 +193,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerInParent="true"
                     android:text="Check Answer"
-                    android:textColor="#000000"/>
+                    android:textColor="#000000" />
 
                 <Button
                     android:id="@+id/buttonnext"
@@ -192,10 +202,71 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerInParent="true"
                     android:text="Next Chord"
-                    android:textColor="#000000"/>
+                    android:textColor="#000000" />
             </LinearLayout>
         </LinearLayout>
 
+
+        <LinearLayout
+            android:id="@+id/ll_root2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg"
+            android:visibility="invisible">
+
+            <!--
+            android:background="@drawable/bg -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:text="YOUR SCORE IS"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="36sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText"
+                        tools:layout_editor_absoluteY="74dp" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="48sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText"
+                        tools:layout_editor_absoluteY="74dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
 
