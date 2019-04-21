@@ -127,7 +127,8 @@
                     app:cv_noteStrokeWidth="2dp"
                     app:cv_noteTextColor="@android:color/white"
                     app:cv_noteTextSize="16sp"
-                    app:cv_stringOffsetY="10dp" />
+                    app:cv_stringOffsetY="10dp"
+                    android:layout_marginTop="40dp"/>
 
                 <TextView
                     android:id="@+id/textView9"
@@ -143,7 +144,8 @@
                     android:textAlignment="center"
                     android:textColor="#000000"
                     android:textSize="14sp"
-                    tools:ignore="HardcodedText" />
+                    tools:ignore="HardcodedText"
+                    android:layout_marginBottom="20dp"/>
 
                 <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                     android:id="@+id/radio_group"
@@ -213,7 +215,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="@drawable/bg"
+            android:background="@drawable/bg2"
             android:visibility="invisible">
 
             <!--
@@ -244,7 +246,7 @@
                         android:text="YOUR SCORE"
                         android:textAlignment="center"
                         android:textColor="#000000"
-                        android:textSize="72sp"
+                        android:textSize="60sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText"
                         tools:layout_editor_absoluteY="74dp" />
@@ -261,7 +263,7 @@
                         android:text=""
                         android:textAlignment="center"
                         android:textColor="#000000"
-                        android:textSize="108sp"
+                        android:textSize="180sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText"
                         tools:layout_editor_absoluteY="74dp" />
