@@ -22,7 +22,7 @@ import java.util.Random;
 
 public class QuestionsActivity extends AppCompatActivity {
 
-    private Button button1, button2, button3;
+    private Button button1, button2, button3, button4;
     private RadioButton radioButton;
     private RadioGroup radioGroup;
     ArrayList<QuestionsList> questions = QuestionsList.createQuestionList();
@@ -58,6 +58,13 @@ public class QuestionsActivity extends AppCompatActivity {
             }
         });
 
+        button4 = findViewById(R.id.buttonretake);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                retake();
+            }
+        });
 
         radioGroup = findViewById(R.id.radio_group);
 
@@ -169,5 +176,18 @@ public class QuestionsActivity extends AppCompatActivity {
             //Toast.makeText(this, "Score is " + score + "/" + questionNumber, Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    private void retake()
+    {
+        questionNumber = 0;
+        score = 0;
+
+        LinearLayout ll_root = findViewById(R.id.ll_root);
+        LinearLayout ll_root2 = findViewById(R.id.ll_root2);
+        ll_root.setVisibility(LinearLayout.VISIBLE);
+        ll_root2.setVisibility(LinearLayout.GONE);
+
+        randQuestion();
     }
 }
