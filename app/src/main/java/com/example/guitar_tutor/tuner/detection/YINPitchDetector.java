@@ -56,7 +56,6 @@ public class YINPitchDetector implements PitchDetector {
         // The fifth step in the YIN algorithm
         float betterTau = parabolicInterpolation(tau);
 
-        // TODO implement the sixth and final step of the YIN algorithm
         // (it isn't implemented in the Tarsos DSP project but is briefly explained in the YIN
         // paper).
 

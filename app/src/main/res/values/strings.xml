@@ -22,7 +22,7 @@
     <string name="share_app_intent_type">text/plain</string>
     <string name="share_app_subject">@string/app_name</string>
     <string name="share_app_description">Download %1$s and keep your guitar in tune. %2$s</string>
-    <!-- TODO update App Link -->
+
     <string name="share_app_link">APP LINK GOES HERE</string>
     <string name="share_app_intent_title">Share App Link</string>
 

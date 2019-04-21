@@ -15,6 +15,8 @@ public class GuitarTutorialActivity extends AppCompatActivity {
     private Button button2;
     private Button button3;
     private Button button4;
+    private Button button5;
+    private Button button6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,22 @@ public class GuitarTutorialActivity extends AppCompatActivity {
                 openGuitarHold();
             }
         });
+
+        button5 = findViewById(R.id.button15);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openGuitarStrum();
+            }
+        });
+
+        button6 = findViewById(R.id.button16);
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openGuitarFinger();
+            }
+        });
     }
 
     public void openGuitarParts () {
@@ -67,5 +85,15 @@ public class GuitarTutorialActivity extends AppCompatActivity {
     public void openGuitarHold () {
         Intent intent = new Intent (this, TutorialGuitarHolding.class);
         startActivity(intent);
+    }
+
+    public void openGuitarStrum () {
+        Intent intent = new Intent (this, TutorialGuitarStrumming.class);
+        startActivity(intent);
+    }
+
+    public void openGuitarFinger () {
+        //Intent intent = new Intent (this, TutorialGuitarHolding.class);
+        //startActivity(intent);
     }
 }

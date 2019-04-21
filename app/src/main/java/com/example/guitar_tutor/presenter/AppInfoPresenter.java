@@ -53,7 +53,6 @@ public class AppInfoPresenter implements Presenter {
             view.showDeviceSDKVersion(res.getString(R.string.app_info_text_api_level, deviceVersion.getAndroidVersion().getName(), deviceVersion.getVersionCode()));
         } catch (PackageManager.NameNotFoundException e) {
             Timber.e(e, "Error Retrieving PackageManager or PackageInfo.");
-            // TODO Display defaults/error
         }
     }
 

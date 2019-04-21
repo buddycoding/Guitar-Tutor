@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".ui.activity.Migrate.TutorialGuitarHolding"></activity>
+        <activity android:name=".ui.activity.Migrate.TutorialGuitarStrumming"></activity>
+        <activity android:name=".ui.activity.Migrate.TutorialGuitarHolding" />
         <activity android:name=".ui.activity.Migrate.TutorialGuitarString" />
         <activity android:name=".ui.activity.Migrate.TutorialGuitarParts" /> <!-- Supports larger bezel-less screen aspect ratios -->
         <meta-data

@@ -150,7 +150,7 @@ public class QuestionsActivity extends AppCompatActivity {
         }
 
         questionNumber++;
-        Log.w("Qno", questionNumber + "");
+
         if(questionNumber < 10)
         {
             Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
@@ -166,7 +166,7 @@ public class QuestionsActivity extends AppCompatActivity {
             TextView tvScore = findViewById(R.id.textView10);
             tvScore.setText(score + "/" + questionNumber);
 
-            Toast.makeText(this, "Score is " + score + "/" + questionNumber, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Score is " + score + "/" + questionNumber, Toast.LENGTH_SHORT).show();
         }
 
     }

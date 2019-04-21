@@ -136,6 +136,7 @@ public class GuitarTunerActivity extends AppCompatActivity implements TunerPitch
         if (getSupportFragmentManager().findFragmentByTag(PitchPlayerFragment.TAG) != null) {
             showGuitarTuner();
         } else {
+            finish();
             super.onBackPressed();
         }
     }

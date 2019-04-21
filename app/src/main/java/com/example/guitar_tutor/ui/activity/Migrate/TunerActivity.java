@@ -22,6 +22,7 @@ public class TunerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 onBackPressed();
+                finish();
                 //openMainActivity();
             }
         });

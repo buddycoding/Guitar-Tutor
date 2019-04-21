@@ -4,7 +4,7 @@ package com.example.guitar_tutor.tuner.note;
  * An Array implementation of the {@link NoteFinder} interface. Note that this implementation may
  * produce incorrect results if the provided frequency is out of range (5587.65 to 16.3516).
  * However, this should be more than sufficient for a Guitar Tuner Application.
- * TODO Make this more performant. Right now it runs in linear time O(n).
+ *  Make this more performant. Right now it runs in linear time O(n).
  */
 public class ArrayNoteFinder implements NoteFinder {
 
