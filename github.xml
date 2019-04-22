@@ -1,0 +1,7 @@
+<application>
+  <component name="GithubAccounts">
+    <account id="dc419403-48c4-4650-a75e-ce4de2be33bf" name="buddycoding">
+      <server host="github.com" />
+    </account>
+  </component>
+</application>
