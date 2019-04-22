@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ui.activity.Migrate.MainActivity">
 
     <!--android.support.constraint.ConstraintLayout-->
 
@@ -141,8 +141,10 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button14"
+            app:layout_constraintTop_toBottomOf="@+id/button15"
             tools:ignore="HardcodedText" />
+
+
 
     </LinearLayout>
 
